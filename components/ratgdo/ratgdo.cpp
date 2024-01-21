@@ -366,7 +366,7 @@ namespace ratgdo {
 
         if (current_millis - last_millis > CHECK_PERIOD) {
              ESP_LOGD(TAG, "%ld: Obstruction count: %d",
-                 current_millis - last_asleep
+                 current_millis - last_millis
              );
 
             // check to see if we got more then PULSES_LOWER_LIMIT pulses
