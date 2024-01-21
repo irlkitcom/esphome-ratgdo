@@ -365,8 +365,7 @@ namespace ratgdo {
         const long PULSES_LOWER_LIMIT = 3;
 
         if (current_millis - last_millis > CHECK_PERIOD) {
-             ESP_LOGD(TAG, "%ld: Obstruction count: %d, expected: %d, since asleep: %ld",
-                 current_millis, this->isr_store_.obstruction_low_count, PULSES_EXPECTED,
+             ESP_LOGD(TAG, "%ld: Obstruction count: %d",
                  current_millis - last_asleep
              );
 
