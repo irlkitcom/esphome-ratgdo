@@ -83,7 +83,7 @@ namespace ratgdo {
         LOG_PIN("  Output GDO Pin: ", this->output_gdo_pin_);
         LOG_PIN("  Input GDO Pin: ", this->input_gdo_pin_);
         if (this->obstruction_from_status_) {
-            ESP_LOGCONFIG(TAG, "  Input Obstruction Pin: not used, will detect from GDO status");
+            //ESP_LOGCONFIG(TAG, "  Input Obstruction Pin: not used, will detect from GDO status");
         } else {
             LOG_PIN("  Input Obstruction Pin: ", this->input_obst_pin_);
         }
